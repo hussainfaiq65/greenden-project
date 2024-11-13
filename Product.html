@@ -1,117 +1,117 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden</title>
-<!--Tailwind CSS CDN LINK-->
-<link href="
-https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Tailwind CSS CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
 
- </head>
- <body>
+<!-- Responsive Navbar -->
+<nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <h1 class="text-2xl">GREENDEN</h1>
 
+    <!-- Menu icon for mobile view -->
+    <div id="menuicon" class="text-2xl cursor-pointer md:hidden">☰</div>
 
-    <!--Responsive Navbar-->
-    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
-        <h1 class="text-2xl">GREENDEN</h1>
-
-       
-
-          
-        <ul class="flex gap-5 text-gray-600 hidden md:flex ">
-            <li>
-                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
-            </li>
-
-            <li>
-                <a class="hover:underline hover:text-black" href="./Product.html">Products</a>
-            </li>
-
-            <li>
-                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+    <!-- Navbar links (hidden on mobile, visible on medium and larger screens) -->
+    <ul class="flex gap-5 text-gray-600 hidden md:flex">
+        <li>
+            <a class="hover:underline hover:text-black" href="./index.html">Home</a>
         </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="./Product.html">Products</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+        </li>
+    </ul>
+</nav>
 
-        </ul>
-    </nav>
+<!-- Side Navigation -->
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+    <ul class="flex flex-col gap-10 items-center text-gray-600">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <li>
+            <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="./Product.html">Products</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="/contact.html">Contact</a>
+        </li>
+    </ul>
+</section>
 
-    
-<
+<!-- Best Seller -->
+<section class="p-4 text-center">
+    <h1 class="font-bold mt-5 text-3xl">Our Products</h1>
+    <section class="text-center">
+        <input id="Search" type="text" class="border border-black p-2 m-3" style="width: 80%;" placeholder="Search For a Product">
+    </section>
 
-
-
-
-    <!--Best Seller-->
-    <section class="p-4 text-center" >
-        <h1 class="font-bold mt-5 text-3xl ">Our Products</h1>
-
-
-        <section class="text-center">
- 
-            <input type="text" class="border border-black p-2 m-3" style="width: 80%;" placeholder="Search For a Product">
-        </section>
-
-
-        <div class="grid grid-cols-2 md:grid-cols-4  mt-5 gap-5 " >
-
-            <div>
-                <img src="./Images/Bestseller_1.png" class="inline hover:shadow-xl  hover: transform hover:-translate-y-2 " alt="">
-                <h1>lily Plant Pot</h1>
-                <p>$20</p>
-            </div>
-
-            <div>
-                <img src="./Images/Bestseller_2.png" class="inline hover:shadow-xl  hover: transform hover:-translate-y-2" alt="">
-                <h1>Rose Plant Pot</h1>
-                <p>$20</p>
-            </div>
-
-            <div>
-                <img src="./Images/Bestseller_3.png" class="inline hover:shadow-xl  hover: transform hover:-translate-y-2" alt="">
-                <h1>Jasmine Plant Pot</h1>
-                <p>$20</p>
-            </div>
-
-
-            <div>
-                <img src="./Images/Bestseller_4.png" class="inline hover:shadow-xl  hover: transform hover:-translate-y-2" alt="">
-                <h1>Sunflower Plant Pot</h1>
-                <p>$20</p>
-            </div>
+    <div id="Product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div>
+            <img src="./Images/Bestseller_1.png" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+            <h1>Lily Plant Pot</h1>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./Images/Bestseller_2.png" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+            <h1>Rose Plant Pot</h1>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./Images/Bestseller_3.png" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+            <h1>Jasmine Plant Pot</h1>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./Images/Bestseller_4.png" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+            <h1>Sunflower Plant Pot</h1>
+            <p>$20</p>
+        </div>
 
         <div>
-            <img src="./Images/Bestseller_2.png"  class="inline hover:shadow-xl  hover: transform hover:-translate-y-2" alt="">
+            <img src="./Images/Bestseller_2.png" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
             <h1>Rose Plant Pot</h1>
             <p>$20</p>
         </div>
 
-            
         <div>
-            <img src="./Images/Bestseller_1.png" class="inline hover:shadow-xl  hover: transform hover:-translate-y-2" alt="">
-            <h1>lily Plant Potpot</h1>
+            <img src="./Images/Bestseller_1.png" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+            <h1>Lily Plant Pot</h1>
             <p>$20</p>
         </div>
 
         <div>
-            <img src="./Images/Bestseller_4.png" class="inline hover:shadow-xl  hover: transform hover:-translate-y-2" alt="">
+            <img src="./Images/Bestseller_4.png" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
             <h1>Sunflower Plant Pot</h1>
             <p>$20</p>
         </div>
-          
-    <div>
-        <img src="./Images/Bestseller_3.png" class="inline hover:shadow-xl  hover: transform hover:-translate-y-2" alt="">
-        <h1>Jasmine Plant Pot</h1>
-        <p>$20</p>
+
+        <div>
+            <img src="./Images/Bestseller_3.png" class="inline hover:shadow-xl hover:transform hover:-translate-y-2" alt="">
+            <h1>Jasmine Plant Pot</h1>
+            <p>$20</p>
+        </div>
     </div>
-</div>
+</section>
 
+<!-- Footer -->
+<section class="bg-green-100 p-10 flex flex-col gap-5 origin-bottom-left">
+    <h1 class="text-4xl font-bold">Greenden</h1>
+    <p>Greenden is proud to be among the hundreds of companies and organizations worldwide that stand at the forefront of the sustainable construction revolution.</p>
+    <p>@ 2024 Greenden.com</p>
+</section>
 
+<!-- Link to external JS file -->
+<script src="./Product.js"></script>
 
-    <!--Footer-->
-    <section class="bg-green-100 p-10 flex flex-col gap-5 origin-bottom-left">
-        <h1 class="text-4xl font-bold">Greenden</h1>
-        <p>Greenden is proud to be among the hundreds of companies and organizations worldwide that stands in the forefront of the sustainable construction revolution.</p>
-        <p>@ 2024 Greenden.com</p>
-    </section>
- </body>
- </html>
+</body>
+</html>
